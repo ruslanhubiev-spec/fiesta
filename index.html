@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fiesta организует фуршеты, бары и программы под ключ: от идеи до готового события за 48 часов." />
+  <title>Fiesta — праздник под ключ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к основному контенту</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Fiesta</div>
+      <nav class="nav" id="main-nav" aria-label="Главная навигация">
+        <a href="#about">О нас</a>
+        <a href="#menu">Сеты</a>
+        <a href="#formats">Форматы</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn ghost" href="#contact">Связаться</a>
+      </nav>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="about">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Праздники без суеты</p>
+          <h1>Создаём события, которые хочется повторить</h1>
+          <p class="lead">Команда Fiesta соберёт фуршет, коктейль-бар и программу под ваш запрос: дни рождения, корпоративы, свадьбы и тематические вечеринки.</p>
+          <div class="actions">
+            <a class="btn" href="#contact">Рассчитать праздник</a>
+            <button class="btn ghost" data-scroll="#formats">Готовые форматы</button>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>1200+</strong><span>проведённых мероприятий</span></li>
+            <li><strong>4.9/5</strong><span>средняя оценка клиентов</span></li>
+            <li><strong>48 ч</strong><span>от идеи до готового плана</span></li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <div class="glass">
+            <p class="tag">Новинка сезона</p>
+            <h2>Неоновый фуршет</h2>
+            <p>Контрастные закуски, подсветка столов и интерактивный бар с безалкогольными и классическими коктейлями.</p>
+            <ul class="checklist">
+              <li>Меню из локальных ингредиентов</li>
+              <li>Бармен-шоу и музыкальное сопровождение</li>
+              <li>Доставка и сборка за 90 минут</li>
+            </ul>
+            <div class="pill-group">
+              <span class="pill">До 80 гостей</span>
+              <span class="pill">Под ключ</span>
+              <span class="pill">Можно на улице</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ribbon">
+      <div class="container marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Фуршеты</span><span>Коктейльные бары</span><span>Тематические вечеринки</span><span>Корпоративы</span><span>Свадьбы</span><span>Выездные мероприятия</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="blocks" id="formats">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Форматы</p>
+          <h2>Пять готовых сценариев — или создадим свой</h2>
+          <p class="muted">Выберите основу, а мы адаптируем меню, декор и программу под площадку и бюджет.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="badge">Популярно</div>
+            <h3>Городской пикник</h3>
+            <p>Лёгкие закуски, лимонады, корнер с мороженым и уютные пледы для гостей.</p>
+            <ul class="meta">
+              <li>До 50 гостей</li>
+              <li>Зелёный декор и свет</li>
+              <li>Диджей или лайв-сет</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Неоновая вечеринка</h3>
+            <p>Футуристичные закуски, неоновые детали, дымовые коктейли и фотозона.</p>
+            <ul class="meta">
+              <li>До 120 гостей</li>
+              <li>Бармен-шоу</li>
+              <li>LED-декор</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Classic white</h3>
+            <p>Минималистичный банкет в белой палитре: акцент на вкус, свет и музыку.</p>
+            <ul class="meta">
+              <li>До 80 гостей</li>
+              <li>Сомелье по желанию</li>
+              <li>Индивидуальный сет-лист</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Домашний ужин</h3>
+            <p>Тёплый камерный формат с живой кухней, шефом и тематическими кулинарными зонами.</p>
+            <ul class="meta">
+              <li>До 20 гостей</li>
+              <li>Открытая кухня</li>
+              <li>Авторская подача</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Корпоратив 360</h3>
+            <p>Работаем под ваши KPI: тимбилдинг, брендированные десерты, мерч и сцена с техникой.</p>
+            <ul class="meta">
+              <li>До 300 гостей</li>
+              <li>Режиссёр программы</li>
+              <li>Звук и свет</li>
+            </ul>
+          </article>
+          <article class="card emphasis">
+            <h3>Своя идея</h3>
+            <p>Расскажите, что важно, а мы соберём предложение за два звонка.</p>
+            <button class="btn ghost" data-scroll="#contact">Обсудить задумку</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container menu-grid">
+        <div>
+          <p class="eyebrow">Меню</p>
+          <h2>Сеты, которые нравятся гостям</h2>
+          <p class="muted">Меняем позиции под сезонность и вкусы команды. Все блюда проходят дегустацию, а рецепты — быстрый прогрев.</p>
+          <div class="pill-group">
+            <span class="pill">Вегетарианское</span>
+            <span class="pill">Халяль</span>
+            <span class="pill">Безлактоз</span>
+            <span class="pill">Детское меню</span>
+          </div>
+        </div>
+        <div class="menu-cards">
+          <div class="menu-card">
+            <div class="menu-header">
+              <h3>Фуршет «Норд»</h3>
+              <span class="price">от 1 200 ₽/гость</span>
+            </div>
+            <p>Лосось гравлакс, тарталетки с ростбифом, мини-круассаны с вялеными томатами, тарты с ягодами.</p>
+          </div>
+          <div class="menu-card">
+            <div class="menu-header">
+              <h3>Бар «Сигнатуры»</h3>
+              <span class="price">от 950 ₽/гость</span>
+            </div>
+            <p>4 фирменных коктейля, безалкогольные пары, ледяные шоты, чайная карта и десертные дринки.</p>
+          </div>
+          <div class="menu-card">
+            <div class="menu-header">
+              <h3>Детский корнер</h3>
+              <span class="price">от 650 ₽/гость</span>
+            </div>
+            <p>Мини-бургеры, вафельные корзинки, фруктовые шашлычки, какао-бар и мастер-класс по безе.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Как работаем</p>
+          <h2>Прозрачно на каждом шаге</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <div class="step-number">1</div>
+            <div>
+              <h3>Созваниваемся</h3>
+              <p>Уточняем задачу, площадку, бюджет и особые пожелания.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">2</div>
+            <div>
+              <h3>Присылаем 2–3 предложения</h3>
+              <p>Декор, меню и тайминг с прозрачной сметой и вариантами апгрейдов.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">3</div>
+            <div>
+              <h3>Готовим площадку</h3>
+              <p>Привозим оборудование и декор, настраиваем звук, готовим корнеры.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">4</div>
+            <div>
+              <h3>Ведём мероприятие</h3>
+              <p>Берём на себя тайминг, сервис, бар и пост-уборку.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta-block">
+      <div class="container cta-grid">
+        <div>
+          <p class="eyebrow">Готовы подключиться</p>
+          <h2>Поможем придумать формат под вашу команду</h2>
+          <p class="muted">Напишите, сколько гостей ждёте, что важно учесть и когда дата. Вернёмся с предложением в течение рабочего дня.</p>
+          <div class="quick-stats">
+            <div>
+              <strong>24/7</strong>
+              <span>на связи</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>шеф-повара</span>
+            </div>
+            <div>
+              <strong>12</strong>
+              <span>базовых сетов</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-card" id="contact">
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Как вас зовут?" required />
+          </label>
+          <label>
+            Формат события
+            <input type="text" name="format" placeholder="Корпоратив, свадьба, фуршет…" required />
+          </label>
+          <label>
+            Гости и дата
+            <input type="text" name="details" placeholder="Например: 60 гостей, 10 февраля" required />
+          </label>
+          <label>
+            Контакт
+            <input type="tel" name="phone" placeholder="Телефон или мессенджер" required />
+          </label>
+          <label>
+            Комментарий
+            <textarea name="comment" rows="3" placeholder="Что важно учесть?"></textarea>
+          </label>
+          <button type="submit" class="btn full">Отправить запрос</button>
+          <p class="policy">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+          <p class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">FAQ</p>
+          <h2>Собрали ответы на частые вопросы</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <header>
+              <h3>Вы работаете за городом?</h3>
+              <button type="button" aria-label="Переключить ответ" aria-expanded="false"></button>
+            </header>
+            <p>Да, у нас есть мобильные кухни и генераторы. Обсудим логистику, чтобы всё привезти вовремя.</p>
+          </article>
+          <article class="faq-item">
+            <header>
+              <h3>Можно ли адаптировать меню?</h3>
+              <button type="button" aria-label="Переключить ответ" aria-expanded="false"></button>
+            </header>
+            <p>Конечно. Делаем вегетарианские, халяльные, безлактозные и детские варианты, учитываем аллергенные продукты.</p>
+          </article>
+          <article class="faq-item">
+            <header>
+              <h3>Сколько команд работает над проектом?</h3>
+              <button type="button" aria-label="Переключить ответ" aria-expanded="false"></button>
+            </header>
+            <p>Менеджер, кулинарная команда, бармены и техническая служба. При больших проектах подключаем второго менеджера.</p>
+          </article>
+          <article class="faq-item">
+            <header>
+              <h3>Что входит в смету?</h3>
+              <button type="button" aria-label="Переключить ответ" aria-expanded="false"></button>
+            </header>
+            <p>Меню, напитки, декор, логистика, оборудование, команда на площадке и финальная уборка. Все позиции прозрачные.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">Fiesta</div>
+        <p class="muted">Создаём события в Москве и области, выезжаем на площадки по всей России.</p>
+      </div>
+      <div class="footer-meta">
+        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+        <a href="mailto:hello@fiesta.events">hello@fiesta.events</a>
+        <p class="muted">Ежедневно с 10:00 до 22:00</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
