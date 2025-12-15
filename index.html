@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Три PDF-книги с меню праздников: фуршеты, коктейли и праздничные наборы." />
+  <title>Fiesta — коллекция меню</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Перейти к основному контенту</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Fiesta</div>
+      <nav class="nav" id="main-nav" aria-label="Главная навигация">
+        <a href="#books">Книги</a>
+        <a href="#steps">Как это работает</a>
+        <a href="#contact">Связаться</a>
+        <a class="btn ghost" href="menu.html">Детально</a>
+      </nav>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero book-hero" id="books">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">PDF-формат</p>
+          <h1>Три кулинарные книги с готовыми меню</h1>
+          <p class="lead">Откройте книги, выберите меню и погрузитесь в рецепты с фото и описанием на отдельной странице.</p>
+          <div class="actions">
+            <a class="btn" href="menu.html">Открыть детально</a>
+            <button class="btn ghost" data-scroll="#contact">Задать вопрос</button>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>3</strong><span>полных PDF</span></li>
+            <li><strong>45+</strong><span>рецептов с фото</span></li>
+            <li><strong>1 клик</strong><span>чтобы раскрыть меню</span></li>
+          </ul>
+        </div>
+        <div class="book-stack">
+          <article class="book-card" data-book="furshet">
+            <div class="badge">PDF</div>
+            <div class="book-cover">
+              <span>Фуршет</span>
+            </div>
+            <h3>Фуршетная книга</h3>
+            <p>Закуски, канапе и сеты для событий.</p>
+            <div class="card-actions">
+              <a class="btn small" href="Фуршет_compressed.pdf" target="_blank" rel="noreferrer">Смотреть меню</a>
+              <a class="btn ghost small" href="menu.html?book=furshet">Детально</a>
+            </div>
+          </article>
+          <article class="book-card" data-book="cocktails">
+            <div class="badge">PDF</div>
+            <div class="book-cover alt">
+              <span>Коктейли</span>
+            </div>
+            <h3>Коктейли и напитки</h3>
+            <p>Авторские дринки и безалкогольные пары.</p>
+            <div class="card-actions">
+              <a class="btn small" href="Коктейли и напитки_compressed.pdf" target="_blank" rel="noreferrer">Смотреть меню</a>
+              <a class="btn ghost small" href="menu.html?book=cocktails">Детально</a>
+            </div>
+          </article>
+          <article class="book-card" data-book="holiday">
+            <div class="badge">PDF</div>
+            <div class="book-cover soft">
+              <span>Праздник</span>
+            </div>
+            <h3>Праздничная книга</h3>
+            <p>Наборы для тёплых застолий и вечеринок.</p>
+            <div class="card-actions">
+              <a class="btn small" href="Праздничная книга_compressed.pdf" target="_blank" rel="noreferrer">Смотреть меню</a>
+              <a class="btn ghost small" href="menu.html?book=holiday">Детально</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview" id="preview">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Что внутри</p>
+          <h2>Коротко о главах каждой книги</h2>
+          <p class="muted">Нажмите «Детально», чтобы перейти на страницу с полным списком и раскрыть рецепты с фото.</p>
+        </div>
+        <div class="preview-grid">
+          <div class="preview-card">
+            <h3>Фуршетная книга</h3>
+            <ul>
+              <li>Мини-тарталетки и канапе</li>
+              <li>Тёплые закуски без очередей</li>
+              <li>Десертный стол</li>
+            </ul>
+            <a class="link" href="menu.html?book=furshet">Детально про фуршет →</a>
+          </div>
+          <div class="preview-card">
+            <h3>Коктейли и напитки</h3>
+            <ul>
+              <li>Сигнатурные коктейли</li>
+              <li>Безалкогольные пары</li>
+              <li>Горячие напитки и чайная карта</li>
+            </ul>
+            <a class="link" href="menu.html?book=cocktails">Детально про бар →</a>
+          </div>
+          <div class="preview-card">
+            <h3>Праздничная книга</h3>
+            <ul>
+              <li>Салаты и закуски</li>
+              <li>Горячие блюда</li>
+              <li>Сладкие сюрпризы</li>
+            </ul>
+            <a class="link" href="menu.html?book=holiday">Детально про застолье →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" id="steps">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Навигация</p>
+          <h2>От главной страницы к рецептам</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <div class="step-number">1</div>
+            <div>
+              <h3>Выберите книгу</h3>
+              <p>На главном экране видно три книги в PDF. У каждой — кнопки меню и детального просмотра.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">2</div>
+            <div>
+              <h3>Перейдите на страницу книги</h3>
+              <p>Кнопка «Детально» открывает страницу со списком всех рецептов выбранной книги.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">3</div>
+            <div>
+              <h3>Раскрывайте рецепты</h3>
+              <p>Клик по названию рецепта показывает фото и краткое описание. Так устроена каждая книга.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta-block" id="contact">
+      <div class="container cta-grid">
+        <div>
+          <p class="eyebrow">Нужна консультация</p>
+          <h2>Подскажем, какую книгу открыть первой</h2>
+          <p class="muted">Напишите, для какого события подбираете рецепты, и мы предложим подходящее меню.</p>
+          <div class="quick-stats">
+            <div>
+              <strong>PDF</strong>
+              <span>готовые файлы</span>
+            </div>
+            <div>
+              <strong>45+</strong>
+              <span>рецептов</span>
+            </div>
+            <div>
+              <strong>5 мин</strong>
+              <span>чтение каждой главы</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-card">
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Как вас зовут?" required />
+          </label>
+          <label>
+            Что готовите
+            <input type="text" name="format" placeholder="Фуршет, коктейли, застолье…" required />
+          </label>
+          <label>
+            Когда дата
+            <input type="text" name="details" placeholder="Например: 14 февраля" required />
+          </label>
+          <label>
+            Контакт
+            <input type="tel" name="phone" placeholder="Телефон или мессенджер" required />
+          </label>
+          <label>
+            Комментарий
+            <textarea name="comment" rows="3" placeholder="Что важно учесть?"></textarea>
+          </label>
+          <button type="submit" class="btn full">Отправить запрос</button>
+          <p class="policy">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+          <p class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">Fiesta</div>
+        <p class="muted">Три PDF-книги с меню: фуршеты, коктейли и праздничные наборы.</p>
+      </div>
+      <div class="footer-meta">
+        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+        <a href="mailto:hello@fiesta.events">hello@fiesta.events</a>
+        <p class="muted">Ежедневно с 10:00 до 22:00</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
