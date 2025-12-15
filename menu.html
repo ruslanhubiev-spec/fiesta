@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Детальные меню трёх PDF-книг Fiesta: рецепты с фото и кратким описанием." />
+  <title>Fiesta — детальное меню</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="menu">
+  <a class="skip-link" href="#main">Перейти к контенту меню</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Fiesta</div>
+      <nav class="nav" id="main-nav" aria-label="Навигация по меню">
+        <a href="index.html#books">Книги</a>
+        <a href="index.html#steps">Как это работает</a>
+        <a class="btn ghost" href="index.html">На главную</a>
+      </nav>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="menu-hero">
+      <div class="container detail-grid">
+        <div>
+          <p class="eyebrow">Детально</p>
+          <h1>Раскрывайте рецепты с фото и описанием</h1>
+          <p class="lead">Выберите книгу ниже, чтобы увидеть все разделы меню. Клик по рецепту показывает фото и краткое описание.</p>
+          <div class="pill-group">
+            <span class="pill">Фуршеты</span>
+            <span class="pill">Коктейли</span>
+            <span class="pill">Праздничные наборы</span>
+          </div>
+          <div class="actions">
+            <a class="btn" href="index.html#books">Вернуться на главный экран</a>
+            <a class="btn ghost" href="Фуршет_compressed.pdf" target="_blank" rel="noreferrer">Открыть PDF</a>
+          </div>
+        </div>
+        <div class="book-switcher" role="tablist" aria-label="Выбор книги">
+          <button class="book-tab" data-book="furshet" role="tab" aria-selected="true">Фуршетная книга</button>
+          <button class="book-tab" data-book="cocktails" role="tab" aria-selected="false">Коктейли и напитки</button>
+          <button class="book-tab" data-book="holiday" role="tab" aria-selected="false">Праздничная книга</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-detail">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Список меню</p>
+          <h2 class="detail-title">Фуршетная книга</h2>
+          <p class="muted">Нажмите на рецепт, чтобы увидеть фото и краткое описание.</p>
+        </div>
+        <div id="menu-list" class="recipe-list" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">Fiesta</div>
+        <p class="muted">Детальные меню для фуршетов, коктейлей и праздничных наборов.</p>
+      </div>
+      <div class="footer-meta">
+        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+        <a href="mailto:hello@fiesta.events">hello@fiesta.events</a>
+        <p class="muted">Ежедневно с 10:00 до 22:00</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

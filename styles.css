@@ -659,3 +659,228 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
+/* Книги на главной */
+.book-hero {
+  padding-bottom: 30px;
+}
+
+.book-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.book-card {
+  background: var(--card-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 12px;
+}
+
+.book-card .badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #0d0b18;
+  color: var(--accent-2);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid var(--border);
+}
+
+.book-cover {
+  background: linear-gradient(135deg, rgba(255, 123, 203, 0.18), rgba(111, 243, 255, 0.14));
+  border-radius: var(--radius);
+  padding: 40px 16px 26px;
+  color: #090713;
+  font-weight: 800;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.book-cover.alt {
+  background: linear-gradient(135deg, rgba(111, 243, 255, 0.2), rgba(102, 82, 255, 0.25));
+}
+
+.book-cover.soft {
+  background: linear-gradient(135deg, rgba(255, 214, 165, 0.28), rgba(255, 123, 203, 0.18));
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn.small {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.btn.ghost.small {
+  padding: 10px 14px;
+}
+
+.preview {
+  padding: 30px 0 20px;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.preview-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.preview-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  display: grid;
+  gap: 6px;
+}
+
+.preview-card .link {
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+/* Детальная страница */
+.menu-hero {
+  padding: 60px 0 30px;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+}
+
+.book-switcher {
+  background: var(--card-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.book-tab {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.book-tab:hover {
+  border-color: var(--accent-2);
+  transform: translateY(-2px);
+}
+
+.book-tab.active {
+  background: linear-gradient(120deg, rgba(255, 123, 203, 0.18), rgba(111, 243, 255, 0.18));
+  border-color: var(--accent-2);
+}
+
+.menu-detail {
+  padding: 20px 0 60px;
+}
+
+.recipe-list {
+  display: grid;
+  gap: 12px;
+}
+
+.recipe-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  overflow: hidden;
+}
+
+.recipe-card header {
+  padding: 4px 8px;
+}
+
+.recipe-card button {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.recipe-card button::after {
+  content: '\25BE';
+  transition: transform 0.2s ease;
+}
+
+.recipe-card.open button::after {
+  transform: rotate(180deg);
+}
+
+.recipe-body {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 0 12px 12px;
+  color: var(--muted);
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.recipe-body img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.recipe-card.open .recipe-body {
+  max-height: 320px;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-body {
+    grid-template-columns: 1fr;
+  }
+}
